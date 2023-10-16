@@ -1,5 +1,4 @@
 <p-panel header="Pipes básicos" class="p-2">
-  <h1>Pipes Básicos</h1>
   <p>
     Pipes incluidos en Angular - Usualmente en el Common Module
   </p>
@@ -25,4 +24,92 @@
       {{fullName | titlecase}}
     </p-card>
   </div>
+
+  <div class="col-12 md:col-6">
+    <p-card header="Pipes back-end">
+      <ol>
+        <li class="mt-1">
+          fecha
+        </li>
+        <li class="mt-1">
+          fecha | date
+        </li>
+        <li class="mt-1">
+          fecha | date: 'short'
+        </li>
+        <li class="mt-1">
+          fecha | date: 'long'
+        </li>
+        <li class="mt-1">
+          fecha | date: 'MMM'
+        </li>
+        <li class="mt-1">
+          fecha | date: 'MMM dd, yyyy'
+        </li>
+      </ol>
+        <hr>
+      <ol>
+        <li class="mt-1">
+          fecha | date: 'long': 'GMT-6'
+        </li>
+
+        <li class="mt-1">
+          fecha | date: 'long': 'GMT-4'
+        </li>
+        <li class="mt-1">
+          fecha | date: 'long': '':'es-EC'
+        </li>
+        <li class="mt-1">
+          fecha | date: 'long': '':'en-US'
+        </li>
+        <li class="mt-1">
+          fecha | date: 'long': '':'fr-CA'
+        </li>
+      </ol>
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-6">
+    <p-card header="Pipes Front-end (resultado)">
+      <ol>
+        <li class="mt-1">
+          {{customDate }}
+        </li>
+        <li class="mt-1">
+          {{ customDate | date}}
+        </li>
+        <li class="mt-1">
+          {{ customDate | date: 'short'}}
+        </li>
+        <li class="mt-1">
+          {{customDate | date: 'long'}}
+        </li>
+        <li class="mt-1">
+          {{customDate | date: 'MMM'}}
+        </li>
+        <li class="mt-1">
+          {{customDate | date: 'MMM dd, yyyy'}}
+        </li>
+      </ol>
+      <hr>
+      <ol>
+        <li class="mt-1">
+          {{customDate| date: 'long': 'GMT-6'}}
+        </li>
+        <li class="mt-1">
+          {{customDate| date: 'long': 'GMT-4'}}
+        </li>
+        <li class="mt-1">
+          {{customDate | date: 'long': '':'es-EC'}}
+        </li>
+        <li class="mt-1">
+          {{customDate | date: 'long': '':'en-US'}}
+        </li>
+        <li class="mt-1">
+          {{customDate | date: 'long': '':'fr-CA'}}
+        </li>
+      </ol>
+    </p-card>
+  </div>
+
 </div>
